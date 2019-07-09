@@ -1,4 +1,4 @@
-docker build -t alexcraigs/multi-client:latest -t alexcriags/multi-client:$SHA -f ./client/Dockerfile ./client
+docker build -t alexcraigs/multi-client:latest -t alexcraigs/multi-client:$SHA -f ./client/Dockerfile ./client
 docker build -t alexcraigs/multi-server:latest -t alexcraigs/multi-server:$SHA -f ./server/Dockerfile ./server
 docker build -t alexcraigs/multi-worker:latest -t alexcraigs/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 docker push alexcraigs/multi-client:latest
